@@ -1,4 +1,3 @@
-// Données des albums
 const albums = {
     album1: {
         title: "Never Apologize v1",
@@ -11,26 +10,27 @@ const albums = {
         cover: "path/to/album2.jpg",
         description: "Description de l'Album 2.",
         tracklist: ["Chanson A", "Chanson B", "Chanson C"]
-    }
+    },
     album3: {
         title: "Never Apologize v3",
-        cover: "path/to/album2.jpg",
-        description: "Description de l'Album 2.",
+        cover: "path/to/album3.jpg",
+        description: "Description de l'Album 3.",
         tracklist: ["Chanson A", "Chanson B", "Chanson C"]
-    }
+    },
     album4: {
         title: "B4War",
-        cover: "path/to/album2.jpg",
-        description: "Description de l'Album 2.",
+        cover: "path/to/album4.jpg",
+        description: "Description de l'Album 4.",
         tracklist: ["Chanson A", "Chanson B", "Chanson C"]
-    }
+    },
     album5: {
         title: "War2",
-        cover: "path/to/album2.jpg",
-        description: "Description de l'Album 2.",
+        cover: "path/to/album5.jpg",
+        description: "Description de l'Album 5.",
         tracklist: ["Chanson A", "Chanson B", "Chanson C"]
     }
 };
+
 
 // Fonction pour récupérer le paramètre d'URL
 function getAlbumParam() {
