@@ -1,3 +1,4 @@
+// Données des albums
 const albums = {
     album1: {
         title: "Never Apologize v1",
@@ -31,7 +32,6 @@ const albums = {
     }
 };
 
-
 // Fonction pour récupérer le paramètre d'URL
 function getAlbumParam() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -49,6 +49,7 @@ function displayAlbum() {
         document.getElementById("album-description").innerText = album.description;
 
         const tracklistEl = document.getElementById("tracklist");
+        tracklistEl.innerHTML = ""; // Vider la liste avant d'ajouter les éléments
         album.tracklist.forEach(track => {
             const li = document.createElement("li");
             li.innerText = track;
