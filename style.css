@@ -1,0 +1,80 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #d9e4ec;
+    color: #3a506b;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+/* Section albums centrée verticalement et horizontalement */
+#albums {
+    flex: 1;
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto; /* Cette marge va centrer la section verticalement et horizontalement */
+    text-align: center; /* Centrer le contenu de la section horizontalement */
+}
+
+/* Disposition en grille des albums */
+.album-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Centrer les albums horizontalement dans la grille */
+    max-width: 1000px; /* Limite la largeur pour garder les albums centrés */
+    margin: 0 auto; /* Centre le conteneur des albums */
+}
+
+/* Style des albums */
+.album {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(58, 80, 107, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.album:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(58, 80, 107, 0.2);
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Enlever le soulignement des liens d'album */
+.album h3 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    color: #3a506b;
+}
+
+.album a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.album a:hover {
+    text-decoration: none;
+}
+
+/* Footer en bas de page */
+footer {
+    font-size: 0.9em;
+    margin-top: 2em;
+}
