@@ -5,9 +5,21 @@ const albums = {
         cover: "images/Capture d'écran 2024-11-07 180833.jpg",
         tracklist: [
             { title: "Go Off", url: "https://pillowcase.su/f/b9809ab2cfdd866ad20eada0de677035" },
-            { title: "Count My Guap", url: "https://example.com/count-my-guap" },
-            { title: "Against The Rope", url: "https://example.com/against-the-rope" },
-            { title: "After Dark", url: "https://example.com/after-dark" }
+            { title: "Count My Guap", url: "https://pillowcase.su/f/681f5a34fec75386f770f2c5924ea796" },
+            { title: "Against The Rope", url: "https://pillowcase.su/f/d0170598a9b0a5f5cf0f0d45165fd6be" },
+            { title: "After Dark", url: "https://krakenfiles.com/view/ETUht5PxDb/file.html" }
+            { title: "Woke Up", url: "https://pillowcase.su/f/dd65869c108bb8ecfec1220b7511a068" },
+            { title: "Right Now", url: "https://pillowcase.su/f/fbfad93aac94d983f29d07d451da038e" },
+            { title: "Blessings", url: "https://soundcloud.com/drugsheal/blessings?si=d58f5a19dd6c48c4b33f93a9b0fcbbcd&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+            { title: "Climb", url: "https://youtu.be/jzlLPQ_3OJY" }
+            { title: "Walking Thru Hell", url: "https://pillowcase.su/f/6924ef53556841b5f6717ff38379b99b" },
+            { title: "Nightlife", url: "https://pillowcase.su/f/5457b5e048d88199ba080d9f88d71294" },
+            { title: "Pockets Loaded", url: "https://pillowcase.su/f/557237fc24b6cbc4b0e86f7eea65a1b5" },
+            { title: "All Day", url: "https://pillowcase.su/f/7668c1b84a5731f38a08122b3a65fc40" }
+            { title: "Call Up The Troops", url: "https://pillowcase.su/f/4b037e642dff719943220520a088bacb" },
+            { title: "Rolling", url: "https://pillowcase.su/f/7596133c3b773a2ec6aa950e9c907b00" },
+            { title: "New York", url: "https://pillowcase.su/f/95e3461bd8f12a6e11f2fe470b3af2ec" },
+            { title: "See Me Shine", url: "https://pillowcase.su/f/3f5f8c6272423c1fd1d4a80f85a8f05f" }
         ]
     },
     album2: {
