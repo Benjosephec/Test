@@ -176,22 +176,33 @@ header, footer {
     margin-bottom: 1em;
 }
 
-/* Liste des titres */
+/* Style pour le conteneur de la liste des titres */
 #tracklist {
-    list-style-type: none;
+    list-style-type: none; /* Enlever les puces de la liste */
     padding: 0;
     margin: 0;
     font-size: 1em;
+    color: #3a506b;
+    text-align: left; /* Aligne les titres à gauche pour une meilleure lisibilité */
 }
 
+/* Style pour chaque titre de la liste */
 #tracklist li {
-    padding: 0.5em;
-    color: #333;
-    border-bottom: 1px solid #d9e4ec;
+    padding: 0.8em 1em; /* Espacement intérieur pour chaque titre */
+    border-bottom: 1px solid #d9e4ec; /* Ligne de séparation entre les titres */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+    cursor: pointer;
 }
 
-/* Style pour le dernier élément de la liste */
+/* Effet de survol pour les titres */
+#tracklist li:hover {
+    background-color: #f0f4f8; /* Changer légèrement le fond au survol */
+    color: #2b3e50; /* Couleur légèrement plus foncée pour le texte au survol */
+}
+
+/* Style pour le dernier élément de la liste pour supprimer la bordure */
 #tracklist li:last-child {
     border-bottom: none;
 }
+
 
