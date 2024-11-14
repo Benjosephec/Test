@@ -192,6 +192,7 @@ header, footer {
     border-bottom: 1px solid #d9e4ec; /* Ligne de séparation entre les titres */
     transition: background-color 0.3s; /* Transition pour l'effet de survol */
     cursor: pointer;
+    text-align: center;
 }
 
 /* Effet de survol pour les titres */
