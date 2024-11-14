@@ -3,7 +3,7 @@ const albums = {
     album1: {
         title: "Never Apologize v1",
         cover: "images/Capture d'écran 2024-11-07 180833.jpg",
-        tracklist: ["Go Off", "Chanson 2", "Chanson 3"]
+        tracklist: ["Go Off", "Count My Guap", "Against The Rope", "After Dark"]
     },
     album2: {
         title: "Never Apologize v2",
