@@ -41,6 +41,7 @@ function displayAlbum() {
     if (album) {
         document.getElementById("album-title").innerText = album.title;
         document.getElementById("album-cover").src = album.cover;
+        document.getElementById("album-description").innerText = album.description;
 
         const tracklistEl = document.getElementById("tracklist");
         tracklistEl.innerHTML = ""; // Vider la liste avant d'ajouter les éléments
