@@ -3,7 +3,12 @@ const albums = {
     album1: {
         title: "Never Apologize v1",
         cover: "images/Capture d'écran 2024-11-07 180833.jpg",
-        tracklist: ["Go Off", "Count My Guap", "Against The Rope", "After Dark"]
+        tracklist: [
+            { title: "Go Off", url: "https://pillowcase.su/f/b9809ab2cfdd866ad20eada0de677035" },
+            { title: "Count My Guap", url: "https://example.com/count-my-guap" },
+            { title: "Against The Rope", url: "https://example.com/against-the-rope" },
+            { title: "After Dark", url: "https://example.com/after-dark" }
+        ]
     },
     album2: {
         title: "Never Apologize v2",
@@ -33,7 +38,6 @@ function getAlbumParam() {
     return urlParams.get("album");
 }
 
-// Afficher les détails de l'album
 function displayAlbum() {
     const albumKey = getAlbumParam();
     const album = albums[albumKey];
@@ -46,14 +50,19 @@ function displayAlbum() {
         tracklistEl.innerHTML = ""; // Vider la liste avant d'ajouter les éléments
         album.tracklist.forEach(track => {
             const li = document.createElement("li");
-            li.innerText = track;
-            tracklistEl.appendChild(li);
+
+            const link = document.createElement("a"); // Créer un élément <a>
+            link.href = track.url; // Assigner l'URL
+            link.innerText = track.title; // Assigner le titre
+            link.target = "_blank"; // Ouvrir le lien dans un nouvel onglet
+
+            li.appendChild(link); // Ajouter le lien à l'élément <li>
+            tracklistEl.appendChild(li); // Ajouter l'élément <li> à la liste
         });
     } else {
         document.getElementById("album-title").innerText = "Album introuvable";
     }
 }
-
 
 // Charger les détails de l'album au chargement de la page
 window.onload = displayAlbum;
