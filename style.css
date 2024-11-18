@@ -40,7 +40,15 @@ header, footer {
     gap: 20px;
     width: 100%;
     margin: 0 auto; /* Centre le conteneur des albums */
+    
+    /* Ajout d'un contour pour démarquer la liste des albums */
+    border: 2px solid rgba(58, 80, 107, 0.2); /* Bordure subtile */
+    border-radius: 10px; /* Coins arrondis pour un style élégant */
+    padding: 20px; /* Espace intérieur pour que le contenu ne touche pas les bords */
+    background-color: rgba(255, 255, 255, 0.8); /* Légère couleur de fond translucide */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet surélevé */
 }
+
 
 /* Section spécifique pour les albums Never Apologize et War */
 #never-apologize-albums, #war-albums {
