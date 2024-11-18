@@ -10,7 +10,7 @@ body {
     
     /* Fond avec une seule image */
     background-color: #f0f4f8; /* Couleur de fond par défaut en cas d'échec de l'image */
-    background-image: url('"/images/Design sans titre.png"'); /* Remplacez 'background.jpg' par le chemin de votre image */
+    background-image: url('images/Design sans titre.png'); /* Remplacez 'background.jpg' par le chemin de votre image */
     background-size: cover; /* Ajuste l'image pour couvrir toute la surface du viewport */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
