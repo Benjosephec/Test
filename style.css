@@ -1,4 +1,4 @@
-/* Style général */
+/* === Style général === */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,14 +8,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    /* Fond avec une seule image, toute visible */
     background-color: #f0f4f8; /* Couleur de fond par défaut en cas d'échec de l'image */
-    background-image: url("images\Design sans titre.png"); /* Remplacez 'background.jpg' par le chemin de votre image */
     background-size: contain; /* L'image s'adapte à la taille de l'écran tout en conservant ses proportions */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
 }
-
 
 header, footer {
     background-color: #d9e4ec;
@@ -24,87 +21,28 @@ header, footer {
     padding: 2em 1em;
 }
 
-/* Section centrée verticalement et horizontalement */
-#albums {
+/* === Section centrée des albums === */
+#never-apologize-albums {
     flex: 1;
     padding: 2em;
     max-width: 1200px;
-    margin: 0 auto; /* Centre la section verticalement et horizontalement */
-    text-align: center; /* Centrer le contenu de la section horizontalement */
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* Disposition en flexbox pour les albums, centrée horizontalement */
 .album-list {
     display: flex;
-    justify-content: center; /* Centre les albums horizontalement dans la section */
+    justify-content: center;
     gap: 20px;
     width: 100%;
-    margin: 0 auto; /* Centre le conteneur des albums */
-    
-    /* Ajout d'un contour pour démarquer la liste des albums */
-    border: 2px solid rgba(58, 80, 107, 0.2); /* Bordure subtile */
-    border-radius: 10px; /* Coins arrondis pour un style élégant */
-    padding: 20px; /* Espace intérieur pour que le contenu ne touche pas les bords */
-    background-color: rgba(255, 255, 255, 0.8); /* Légère couleur de fond translucide */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet surélevé */
-}
-
-
-/* Section spécifique pour les albums Never Apologize et War */
-#never-apologize-albums, #war-albums {
-    display: flex;
-    justify-content: center; /* Centre les albums sur l'axe X */
-    gap: 20px; /* Espace entre les albums */
-    padding: 2em;
-    max-width: 1200px;
-    margin: 0 auto; /* Centre la section elle-même */
-}
-
-/* Section des eras (Never Apologize et War) */
-#eras {
-    display: flex;
-    justify-content: center; /* Centrer les choix d'eras horizontalement */
-    gap: 30px; /* Espace entre chaque carte d'era */
-    padding: 2em;
-    max-width: 1200px;
-    margin: 0 auto; /* Centre la section des eras */
-}
-
-/* Style des cartes de choix d'era */
-.era-card {
-    background-color: #ffffff;
+    margin: 0 auto;
+    border: 2px solid rgba(58, 80, 107, 0.2);
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(58, 80, 107, 0.1);
-    overflow: hidden;
-    text-align: center;
-    width: 250px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.era-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(58, 80, 107, 0.2);
-}
-
-/* Image de la carte d'era */
-.era-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-/* Titre de l'era */
-.era-card h3 {
-    font-size: 1.3em;
-    margin: 0.5em 0;
-    color: #3a506b;
-}
-
-/* Style des albums */
 .album {
     background-color: #ffffff;
     border-radius: 10px;
@@ -116,24 +54,21 @@ header, footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 250px; /* Fixe une largeur constante pour les albums */
+    width: 250px;
 }
 
-/* Image de l'album */
 .album img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-/* Titre de l'album */
 .album h3 {
     font-size: 1.3em;
     margin: 0.5em 0;
     color: #3a506b;
 }
 
-/* Lien sans soulignement */
 .album a {
     text-decoration: none;
     color: inherit;
@@ -148,7 +83,7 @@ header, footer {
     box-shadow: 0px 6px 12px rgba(58, 80, 107, 0.2);
 }
 
-/* Style pour la section de détails de l'album */
+/* === Styles des pages d'album (album.html) === */
 #album-details {
     padding: 2em;
     max-width: 800px;
@@ -159,7 +94,6 @@ header, footer {
     text-align: center;
 }
 
-/* Image de couverture de l'album */
 #album-cover {
     width: 100%;
     max-width: 400px;
@@ -169,14 +103,12 @@ header, footer {
     box-shadow: 0px 4px 8px rgba(58, 80, 107, 0.1);
 }
 
-/* Titre de l'album */
 #album-title {
     font-size: 2em;
     color: #3a506b;
     margin: 0.5em 0;
 }
 
-/* Description de l'album */
 #album-description {
     font-size: 1em;
     color: #555;
@@ -184,7 +116,6 @@ header, footer {
     line-height: 1.6;
 }
 
-/* Titre de la liste des titres */
 #album-details h3 {
     font-size: 1.5em;
     color: #3a506b;
@@ -192,43 +123,59 @@ header, footer {
     margin-bottom: 1em;
 }
 
-/* Style pour le conteneur de la liste des titres */
 #tracklist {
-    list-style-type: none; /* Enlever les puces de la liste */
+    list-style-type: none;
     padding: 0;
     margin: 0;
     font-size: 1em;
     color: #3a506b;
-    text-align: center; /* Aligne les titres à gauche pour une meilleure lisibilité */
+    text-align: center;
 }
 
-/* Style pour chaque titre de la liste */
 #tracklist li {
-    padding: 0.8em 1em; /* Espacement intérieur pour chaque titre */
-    border-bottom: 1px solid #d9e4ec; /* Ligne de séparation entre les titres */
-    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+    padding: 0.8em 1em;
+    border-bottom: 1px solid #d9e4ec;
+    transition: background-color 0.3s;
     cursor: pointer;
 }
 
-/* Effet de survol pour les titres */
 #tracklist li:hover {
-    background-color: #f0f4f8; /* Changer légèrement le fond au survol */
-    color: #2b3e50; /* Couleur légèrement plus foncée pour le texte au survol */
+    background-color: #f0f4f8;
+    color: #2b3e50;
 }
 
-/* Style pour le dernier élément de la liste pour supprimer la bordure */
 #tracklist li:last-child {
     border-bottom: none;
 }
 
-/* Sélectionner tous les liens */
 a {
-    color: inherit; /* Conserver la couleur du texte environnant */
-    text-decoration: none; /* Supprime la ligne de soulignement */
+    color: inherit;
+    text-decoration: none;
 }
 
-/* Optionnel: Pour que les liens ne changent pas de couleur quand on passe la souris dessus */
 a:hover {
     color: inherit;
     text-decoration: none;
+}
+
+/* === Media Queries pour la version mobile === */
+@media (max-width: 767px) {
+    body {
+        background-image: none; /* Retirer l'image de fond sur mobile */
+    }
+
+    /* Pour les sections d'albums et eras */
+    #never-apologize-albums, #war-albums {
+        flex-direction: column; /* Mettre les albums l'un en dessous de l'autre */
+        align-items: center; /* Centrer les albums */
+    }
+
+    .album {
+        width: 90%; /* Album occupe 90% de la largeur */
+        margin-bottom: 1.5em; /* Espacement entre les albums */
+    }
+
+    .album-list {
+        gap: 0; /* Enlever l'espace horizontal */
+    }
 }
