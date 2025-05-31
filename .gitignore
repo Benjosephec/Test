@@ -4,6 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
+/public/music/*
+!public/music/.keep  # pour garder le dossier vide sur GitHub
+/src/data/albums.js
 
 # testing
 /coverage
