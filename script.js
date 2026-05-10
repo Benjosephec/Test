@@ -2,7 +2,7 @@ const albums = {
     "After-": {
         id: "After-",
         title: "After Me (Sessions)",
-        cover: "./music/After-me/After-me.jpg",
+        cover: "./music/After-Me/After-me.jpg",
         tracks: [
             { num: 1,  title: "2 Ways",                          file: "./music/After-me/SoFaygo - 2 Ways.mp3" },
             { num: 2,  title: "Artillery",                       file: "./music/After-me/SoFaygo - Artillery.mp3" },
@@ -27,7 +27,7 @@ const albums = {
     "GO": {
         id: "GO",
         title: "GO+ (Sessions)",
-        cover: "music/GO/alternate-covers-for-go-v0-y7mzix25yabb1.jpg",
+        cover: "music/GO/GO.jpg",
         tracks: [
             { num: 1,  title: "4ALLMYDAWGS",                     file: "./music/GO/SoFaygo - 4ALLMYDAWGS.mp3" },
             { num: 2,  title: "Bye (feat. Lil Uzi Vert)",        file: "./music/GO/SoFaygo - Bye (feat. Lil Uzi Vert).mp3" },
