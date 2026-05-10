@@ -1,80 +1,52 @@
-// Données des albums
 const albums = {
-    album1: {
-        title: "Never Apologize v1",
-        cover: "images/Capture d'écran 2024-11-07 180833.jpg",
-        tracklist: [
-            { title: "Go Off", url: "https://pillowcase.su/f/b9809ab2cfdd866ad20eada0de677035" },
-            { title: "Count My Guap", url: "https://pillowcase.su/f/681f5a34fec75386f770f2c5924ea796" },
-            { title: "Against The Rope", url: "https://pillowcase.su/f/d0170598a9b0a5f5cf0f0d45165fd6be" },
-            { title: "After Dark", url: "https://krakenfiles.com/view/ETUht5PxDb/file.html" },
-            { title: "Woke Up", url: "https://pillowcase.su/f/dd65869c108bb8ecfec1220b7511a068" },
-            { title: "Right Now", url: "https://pillowcase.su/f/fbfad93aac94d983f29d07d451da038e" },
-            { title: "Blessings", url: "https://soundcloud.com/drugsheal/blessings?si=d58f5a19dd6c48c4b33f93a9b0fcbbcd&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
-            { title: "Climb", url: "https://youtu.be/jzlLPQ_3OJY" },
-            { title: "Walking Thru Hell", url: "https://pillowcase.su/f/6924ef53556841b5f6717ff38379b99b" },
-            { title: "Nightlife", url: "https://pillowcase.su/f/5457b5e048d88199ba080d9f88d71294" },
-            { title: "Pockets Loaded", url: "https://pillowcase.su/f/557237fc24b6cbc4b0e86f7eea65a1b5" },
-            { title: "All Day", url: "https://pillowcase.su/f/7668c1b84a5731f38a08122b3a65fc40" },
-            { title: "Call Up The Troops", url: "https://pillowcase.su/f/4b037e642dff719943220520a088bacb" },
-            { title: "Rolling", url: "https://pillowcase.su/f/7596133c3b773a2ec6aa950e9c907b00" },
-            { title: "New York", url: "https://pillowcase.su/f/95e3461bd8f12a6e11f2fe470b3af2ec" },
-            { title: "See Me Shine", url: "https://pillowcase.su/f/3f5f8c6272423c1fd1d4a80f85a8f05f" }
+    "after-me": {
+        id: "after-me",
+        title: "After Me (Sessions)",
+        folder: "12. After Me (Sessions)",
+        cover: "music/12. After Me (Sessions)/After Me (Sessions).jpg",
+        tracks: [
+            { num: 1,  title: "2 Ways",                          file: "music/12. After Me (Sessions)/SoFaygo - 2 Ways.mp3" },
+            { num: 2,  title: "Artillery",                       file: "music/12. After Me (Sessions)/SoFaygo - Artillery.mp3" },
+            { num: 3,  title: "BLAST!",                          file: "music/12. After Me (Sessions)/SoFaygo - BLAST!.mp3" },
+            { num: 4,  title: "Controlling",                     file: "music/12. After Me (Sessions)/SoFaygo - Controlling v1.mp3" },
+            { num: 5,  title: "Fade Away",                       file: "music/12. After Me (Sessions)/SoFaygo - Fade Away.mp3" },
+            { num: 6,  title: "Imposter",                        file: "music/12. After Me (Sessions)/SoFaygo - Imposter.mp3" },
+            { num: 7,  title: "Late Night (feat. SSG Kobe)",     file: "music/12. After Me (Sessions)/SoFaygo - Late Night (feat. SSG Kobe).mp3" },
+            { num: 8,  title: "Never Fold (feat. Guwop Reign)",  file: "music/12. After Me (Sessions)/SoFaygo - Never Fold (feat. Guwop Reign).mp3" },
+            { num: 9,  title: "Ok Let's Go! (feat. SoFaygo)",   file: "music/12. After Me (Sessions)/SSGKobe - Ok Let's Go! (feat. SoFaygo).mp3" },
+            { num: 10, title: "Pick & Choose",                   file: "music/12. After Me (Sessions)/SoFaygo - Pick & Choose.mp3" },
+            { num: 11, title: "Rerun",                           file: "music/12. After Me (Sessions)/SoFaygo - Rerun.mp3" },
+            { num: 12, title: "Savior",                          file: "music/12. After Me (Sessions)/SoFaygo - Savior.mp3" },
+            { num: 13, title: "Silence",                         file: "music/12. After Me (Sessions)/SoFaygo - Silence.mp3" },
+            { num: 14, title: "Spill Um (Soul)",                 file: "music/12. After Me (Sessions)/SoFaygo - Spill Um (Soul).mp3" },
+            { num: 15, title: "The Way I Do",                    file: "music/12. After Me (Sessions)/SoFaygo - The Way I Do.mp3" },
+            { num: 16, title: "Understand (feat. Pasto Flocco)", file: "music/12. After Me (Sessions)/SoFaygo - Understand (feat. Pasto Flocco).mp3" },
+            { num: 17, title: "Yeah Ok",                         file: "music/12. After Me (Sessions)/SoFaygo - Yeah Ok.mp3" },
+            { num: 18, title: "Yeah OK (feat. Yung Fazo)",       file: "music/12. After Me (Sessions)/SoFaygo - Yeah OK (feat. Yung Fazo).mp3" }
         ]
     },
-    album2: {
-        title: "Never Apologize v2",
-        cover: "path/to/album2.jpg",
-        tracklist: ["Chanson A", "Chanson B", "Chanson C"]
-    },
-    album3: {
-        title: "Never Apologize v3",
-        cover: "path/to/album3.jpg",
-        tracklist: ["Chanson A", "Chanson B", "Chanson C"]
-    },
-    album4: {
-        title: "B4War",
-        cover: "path/to/album4.jpg",
-        tracklist: ["Chanson A", "Chanson B", "Chanson C"]
-    },
-    album5: {
-        title: "War2",
-        cover: "path/to/album5.jpg",
-        tracklist: ["Chanson A", "Chanson B", "Chanson C"]
+    "go-plus": {
+        id: "go-plus",
+        title: "GO+ (Sessions)",
+        folder: "16. GO+ (Sessions)",
+        cover: "music/16. GO+ (Sessions)/alternate-covers-for-go-v0-y7mzix25yabb1.jpg",
+        tracks: [
+            { num: 1,  title: "4ALLMYDAWGS",                     file: "music/16. GO+ (Sessions)/SoFaygo - 4ALLMYDAWGS.mp3" },
+            { num: 2,  title: "Bye (feat. Lil Uzi Vert)",        file: "music/16. GO+ (Sessions)/SoFaygo - Bye (feat. Lil Uzi Vert).mp3" },
+            { num: 3,  title: "Cap2Us",                          file: "music/16. GO+ (Sessions)/SoFaygo - Cap2Us.mp3" },
+            { num: 4,  title: "EXTRA",                           file: "music/16. GO+ (Sessions)/SoFaygo - EXTRA.mp3" },
+            { num: 5,  title: "Flats",                           file: "music/16. GO+ (Sessions)/SoFaygo - Flats.mp3" },
+            { num: 6,  title: "Had Enough",                      file: "music/16. GO+ (Sessions)/SoFaygo - Had Enough.mp3" },
+            { num: 7,  title: "Highway",                         file: "music/16. GO+ (Sessions)/SoFaygo - Highway.mp3" },
+            { num: 8,  title: "Nobody",                          file: "music/16. GO+ (Sessions)/SoFaygo - Nobody.mp3" },
+            { num: 9,  title: "OMFG",                            file: "music/16. GO+ (Sessions)/SoFaygo - OMFG.mp3" },
+            { num: 10, title: "On The Moon [V1]",                file: "music/16. GO+ (Sessions)/SoFaygo - On The Moon [V1].mp3" },
+            { num: 11, title: "Problems",                        file: "music/16. GO+ (Sessions)/SoFaygo - Problems.mp3" },
+            { num: 12, title: "Pull Up [V1]",                    file: "music/16. GO+ (Sessions)/SoFaygo - Pull Up [V1].mp3" },
+            { num: 13, title: "PURE [V2]",                       file: "music/16. GO+ (Sessions)/SoFaygo - PURE [V2].mp3" },
+            { num: 14, title: "Right Road (feat. SoFaygo)",      file: "music/16. GO+ (Sessions)/TrapGoKrazy - Right Road (feat. SoFaygo).mp3" },
+            { num: 15, title: "Spectacular",                     file: "music/16. GO+ (Sessions)/SoFaygo - Spectacular.mp3" },
+            { num: 16, title: "X",                               file: "music/16. GO+ (Sessions)/SoFaygo - X.mp3" }
+        ]
     }
 };
-
-// Fonction pour récupérer le paramètre d'URL
-function getAlbumParam() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get("album");
-}
-
-function displayAlbum() {
-    const albumKey = getAlbumParam();
-    const album = albums[albumKey];
-
-    if (album) {
-        document.getElementById("album-title").innerText = album.title;
-        document.getElementById("album-cover").src = album.cover;
-
-        const tracklistEl = document.getElementById("tracklist");
-        tracklistEl.innerHTML = ""; // Vider la liste avant d'ajouter les éléments
-        album.tracklist.forEach(track => {
-            const li = document.createElement("li");
-
-            const link = document.createElement("a"); // Créer un élément <a>
-            link.href = track.url; // Assigner l'URL
-            link.innerText = track.title; // Assigner le titre
-            link.target = "_blank"; // Ouvrir le lien dans un nouvel onglet
-
-            li.appendChild(link); // Ajouter le lien à l'élément <li>
-            tracklistEl.appendChild(li); // Ajouter l'élément <li> à la liste
-        });
-    } else {
-        document.getElementById("album-title").innerText = "Album introuvable";
-    }
-}
-
-// Charger les détails de l'album au chargement de la page
-window.onload = displayAlbum;

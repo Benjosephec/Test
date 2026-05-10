@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album – SoFaygo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav><a href="index.html">← Retour</a></nav>
+
+    <div id="player-bar">
+        <div id="player-track-name">—</div>
+        <audio id="main-audio" controls></audio>
+    </div>
+
+    <section id="album-details">
+        <img id="album-cover" src="" alt="">
+        <h2 id="album-title">Chargement...</h2>
+        <h3>Tracklist</h3>
+        <ul id="tracklist"></ul>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        let currentIndex = -1;
+        let tracks = [];
+        const audio = document.getElementById('main-audio');
+        const playerBar = document.getElementById('player-bar');
+        const playerName = document.getElementById('player-track-name');
+
+        const id = new URLSearchParams(location.search).get('id');
+        const album = albums[id];
+
+        if (!album) {
+            document.getElementById('album-title').textContent = 'Album introuvable';
+        } else {
+            document.title = album.title + ' – SoFaygo';
+            document.getElementById('album-title').textContent = album.title;
+            document.getElementById('album-cover').src = album.cover;
+            document.getElementById('album-cover').alt = album.title;
+            tracks = album.tracks;
+
+            const list = document.getElementById('tracklist');
+            tracks.forEach((track, i) => {
+                const li = document.createElement('li');
+                li.id = 'track-' + i;
+                li.innerHTML = `
+                    <span><span class="track-num">${String(track.num).padStart(2,'0')}. </span>${track.title}</span>
+                    <button class="btn-play" onclick="playTrack(${i})">▶ Play</button>
+                `;
+                li.ondblclick = () => playTrack(i);
+                list.appendChild(li);
+            });
+        }
+
+        function playTrack(i) {
+            if (currentIndex >= 0) document.getElementById('track-' + currentIndex)?.classList.remove('playing');
+            currentIndex = i;
+            audio.src = tracks[i].file;
+            audio.play();
+            playerName.textContent = tracks[i].title;
+            playerBar.classList.add('visible');
+            document.getElementById('track-' + i).classList.add('playing');
+        }
+
+        audio.addEventListener('ended', () => {
+            if (currentIndex + 1 < tracks.length) playTrack(currentIndex + 1);
+        });
+    </script>
+</body>
+</html>
