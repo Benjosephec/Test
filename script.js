@@ -2,7 +2,7 @@ const albums = {
     "After-": {
         id: "After-",
         title: "After Me (Sessions)",
-        cover: "music/After-/After-.jpg",
+        cover: "music/After-/After-me.jpg",
         tracks: [
             { num: 1,  title: "2 Ways",                          file: "music/After-me/SoFaygo - 2 Ways.mp3" },
             { num: 2,  title: "Artillery",                       file: "music/After-me/SoFaygo - Artillery.mp3" },
